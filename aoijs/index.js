@@ -1,7 +1,7 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
 
 const client = new AoiClient({
-  token: "DISCORD_BOT_TOKEN",
+  token: process.env.DISCORD_BOT_TOKEN,
   prefix: ".",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
   events: ["onMessage", "onInteractionCreate"],
